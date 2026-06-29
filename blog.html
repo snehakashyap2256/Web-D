@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 1000px;
+        height: 1180px;
+        background-color: pink;
+        margin: 50px auto 0;
+        box-sizing: border-box;
+        position: relative;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+      }
+      .box {
+        width: 600px;
+        height: 865px;
+        border: 10px solid white;
+        box-sizing: border-box;
+        float: left;
+        margin-top: 80px;
+        margin-left: 200px;
+      }
+      .bottom {
+        height: 150px;
+        width: 1000px;
+        background-color: rgba(33, 124, 143, 255);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 20px;
+        line-height: 1.3;
+      }
+      .bottom p {
+        font-size: 10px;
+        line-height: 1.5;
+      }
+      .circle {
+        width: 90px;
+        height: 90px;
+        border-radius: 360px;
+        background-color: rgba(254, 202, 0, 255);
+        margin-top: -165px;
+        margin-left: 450px;
+        font-size: 50px;
+        line-height: 1.8;
+      }
+      .title {
+        width: 580px;
+        height: 25px;
+        border: 10px solid white;
+        float: left;
+        margin-top: -10px;
+        margin-left: -10px;
+        font-size: 18px;
+        line-height: 1.3;
+      }
+      .head {
+        width: 580px;
+        height: 150px;
+        border: 10px solid white;
+        background-color: rgb(250, 208, 215);
+        float: left;
+        margin-top: -10px;
+        margin-left: -10px;
+      }
+      .h1 {
+        width: 350px;
+        height: 70px;
+        border: 10px solid white;
+        background-color: pink;
+        float: left;
+        margin-top: 30px;
+        margin-left: 110px;
+        font-size: 40px;
+        line-height: 1.7;
+      }
+      .sec {
+        width: 580px;
+        height: 35px;
+        border: 10px solid white;
+        float: left;
+        margin-top: -10px;
+        margin-left: -10px;
+      }
+      .sec a {
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 1.8;
+        margin-left: 30px;
+        margin-right: 30px;
+        color: white;
+      }
+      .body {
+        width: 400px;
+        height: 500px;
+        border: 10px solid white;
+        float: left;
+         margin: -9px 0px 0px -10px;
+        font-size: 12px;
+        text-align: left;
+        line-height: 1.4;
+        box-sizing: border-box;
+        padding: 15px;
+      }
+      .body1 {
+        width: 350px;
+        height: 220px;
+        float: left;
+        margin-top: 15px;
+        background-color: rgb(247, 244, 245);
+        opacity: 0.8;
+      }
+
+      .body2,
+      .body3,
+      .body4,
+      .body5 {
+        width: 350px;
+        height: 10px;
+        float: left;
+        margin-top: 15px;
+        background-color: rgb(247, 244, 245);
+        opacity: 0.8;
+      }
+      .p1 {
+        float: left;
+        font-size: 16px;
+        line-height: 4;
+      }
+      .p2 {
+        float: right;
+        font-size: 16px;
+        margin-right: 20px;
+        line-height: 4;
+      }
+      .p3 {
+        float: right;
+        font-size: 18px;
+        line-height: 4;
+      }
+      .b1 {
+        width: 210px;
+        height: 90px;
+        border: 10px solid white;
+        float: right;
+        margin: -9px -10px 0px -20px;
+        text-align: left;
+        background-color: rgb(250, 208, 215);
+        box-sizing: border-box;
+        padding: 10px;
+      }
+      .b1 i {
+        font-size: 20px;
+        line-height: 2;
+        margin-left: 8px;
+      }
+      .b2 {
+        width: 210px;
+        height: 150px;
+        border: 10px solid white;
+        float: right;
+         margin: -9px -10px 0px -20px;
+        background-color: rgb(250, 208, 215);
+        box-sizing: border-box;
+        padding: 15px;
+      }
+      .b21 {
+        width: 150px;
+        height: 100px;
+        background-color: rgb(247, 244, 245);
+        opacity: 0.8;
+      }
+      .b3 {
+        width: 210px;
+        height: 278px;
+        border: 10px solid white;
+        float: right;
+        margin: -9px -10px 0px -20px;
+        background-color: rgb(250, 208, 215);
+        font-size: 15px;
+        text-align: left;
+        padding: 15px;
+        box-sizing: border-box;
+      }
+      .b31,
+      .b32,
+      .b33 {
+        width: 150px;
+        height: 62px;
+        float: left;
+        margin-top: 8px;
+        background-color: rgb(247, 244, 245);
+        opacity: 0.8;
+      }
+      .tail {
+        width: 580px;
+        height: 120px;
+        border: 10px solid white;
+        float: left;
+        margin-top: -10px;
+        margin-left: -10px;
+        font-size: 20px;
+        line-height: 2.5;
+        background-color: rgb(250, 208, 215);
+      }
+      .tail1 {
+        width: 370px;
+        height: 100px;
+        background-color: rgb(247, 244, 245);
+        opacity: 0.8;
+        margin-top: 50px;
+        margin-left: 100px;
+        font-size: 35px;
+        line-height: 2.5;
+        color: black;
+      }
+      .clear {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="title">INFORMATION MENU BAR</div>
+        <div class="head">
+          <div class="h1">BLOG NAME</div>
+        </div>
+        <div class="sec">
+          <a href="#">CATEGORY 1</a>
+          <a href="#">CATEGORY 2</a>
+          <a href="#">CATEGORY 3</a>
+        </div>
+        <div class="body">
+          CATEGORY<br />
+          <h1>POST TITLE</h1>
+          DATE<br />
+          <div class="body1"></div>
+          <div class="body2"></div>
+          <div class="body3"></div>
+          <div class="body4"></div>
+          <div class="body5"></div>
+          <p class="p1">COMMENTS</p>
+          <p class="p3">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-pinterest-p"></i>
+          </p>
+          <p class="p2">SHARE</p>
+        </div>
+        <div class="b1">
+          FOLLOW US <br />
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-pinterest-p"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="b2">
+          <div class="b21"></div>
+        </div>
+        <div class="b3">
+          POPULAR POST
+          <div class="b32"></div>
+          <div class="b32"></div>
+          <div class="b33"></div>
+        </div>
+        <br class="clear" />
+        <div class="tail">
+          CREDIT & COPYRIGHT
+          <div class="tail1">BLOG DESIGN 101</div>
+        </div>
+      </div>
+      <br class="clear" />
+      <div class="bottom">
+        <br /><br />
+        <h1>ANATOMY OF A BLOG LAYOUT</h1>
+        <p>DESIGNISTAY.COM</p>
+        <div class="circle">01</div>
+      </div>
+    </div>
+  </body>
+</html>
